@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-child {
+  flex: 1;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.07);
+}
+
+.scorecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+  width: 20rem;
+  height: 30rem;
+  color: white;
+  font-size: 18px;
+}
+
+.scorecontainer h2:first-child {
+  padding: 10px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.score {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 11rem;
+  height: 11rem;
+}
+
+.score h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 0;
+  margin-top: 2rem;
+
+}
+
+.score p {
+  font-weight: 500;
+  margin-top: 0;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.praise {
+  font-size: 1.6em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: hsla(0, 0%, 100%, 0.9);
+
+}
+
+.gradetext {
+  text-align: center;
+  width: 70%;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 0;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  width: 20rem;
+  height: 30rem;
+  color: black;
+}
+
+.h2-sum {
+  display: flex;
+  width: 80%;
+  justify-content: start;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  padding: 0 10px;
+  width: 75%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.skillname {
+  display: flex;
+}
+
+.skillimg {
+  padding: 0 10px;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.points {
+  display: flex;
+  justify-content: end;
+  color: black;
+  padding-right: 10px;
+}
+
+.points p span {
+  color: hsla(0, 100%, 0%, 0.4);
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px;
+  border-radius: 25px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.attribution {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media all and (max-width: 566px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+
+  .flex-container {
+    flex-direction: column;
+    height: 100%;
+
+  }
+
+  .scorecontainer {
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+    margin-top: 0;
+    /* height: 40%; */
+
+  }
+
+  .score {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .score h1 {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+
+  .gradetext {
+    padding-bottom: 40px;
+  }
+
+  .summary {
+    width: 100%;
+    height: 60%;
+  }
+
+  .flex-child {
+    box-shadow: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
